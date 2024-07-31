@@ -1,0 +1,23 @@
+﻿.db-config, .d-transfer{
+    width:400px;
+	padding:20px;
+	margin:50px 0px;
+	box-shadow:0px 0px 15px 0px #ddd;
+}
+.db-config div{
+    display:grid;
+	grid-template-columns:1fr 1fr;
+	margin:2px auto;
+}
+.db-config h4 , .d-transfer h4{
+   margin-bottom:20px;
+}
+.d-transfer .btn{
+   background-color:#ff2349;
+   color:#fff;
+}
+.d-transfer div{
+    display:grid;
+	grid-template-columns:1fr 1fr;
+	margin:2px auto;
+}

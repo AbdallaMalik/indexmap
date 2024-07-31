@@ -1,0 +1,161 @@
+select {
+    -webkit-appearance: auto !important;
+}
+button, input {
+}
+.mdsearchLstnone{
+	pointer-events:none !important;
+	opacity:0.7 !important;
+}  
+.astheadsLINks,
+.astheadsLINks div, 
+.astNUBERsLINks,
+.astNUBERsLINks> div{
+	line-height:initial !important;
+}
+.astheadsLINks,
+.astNUBERsLINks{
+	padding:0px !important;
+	gap:2.5px;
+}
+.astheadsLINks .astPOINTITLes,
+.astNUBERsLINks .astPOINTITLes{
+	border:0px solid #ddd;
+	border-right:2px solid #fff;
+	min-height:20px;
+	padding:0px 5px !important;
+}
+.astNUBERsLINks .astNUBERsLINk{
+    text-align: initial;
+    min-height: 20px;
+    justify-content: flex-start;
+    padding: 0px 5px;
+}
+.astNUBERsclicks .astPOINTITLes{
+	min-height:30px;
+}
+.astNUBERsclicks .astNUBERsLINk{
+	justify-content:space-between !important;
+	min-height:30px;
+}
+.astPRIcesPen .astPRIcBODLdes{
+	font-size:10px;
+	font-style:italic;
+}
+.astheadPURPose{
+	flex-flow:row !important;
+	background-color:#fff;
+	gap:3px;
+	padding:0px;
+	justify-content:center;
+	position:relative;
+	margin:2.5px 0px !important;
+	min-height:22px;
+}
+.astheadPURPose div.astNUBERsLINks{
+	flex:initial !important;
+	width:initial !important;
+	flex-flow:row !important;
+	gap:2.5px;
+	padding:0px !important;
+	justify-content:space-between !important;
+	background-color:#ddd;
+	height:100% !important;
+	min-height:22px;
+	border-bottom:1px solid #ddd;
+	border-top:1px solid #ddd;
+}
+.astheadPURPose div.astNUBERsLINks:last-child{
+	flex:1 !important;
+}
+.astheadPURPose div.astNUBERsLINks> div{
+	height:100% !important;
+	min-height:20px;
+	border:0px !important;
+}
+.astheadPURPose div.astNUBERsLINks div.astPOINTITLes{
+	background-color:#f7f7f7;
+	font-size:10px;
+	flex:initial !important;
+	padding:0px 5px !important;
+}
+.astheadPURPose div.astNUBERsLINks div.astNUBERsLINk{
+	background-color:#fff;
+	padding:0px 5px;
+	flex:1 !important;
+}
+.searchMOBs a.mdMAPsearchVALUe, 
+.mdMAPssearchBTNs a.mdMAPsearchVALUe,
+.mdMAPSelmoreshdrPrint .mdMAPsearchCNTLnks .mdMAPschLnks,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current
+{
+	background-color:#fe6f4b;
+    background-image: linear-gradient(to bottom, #fd977d, #fe6f4b, #fe6f4b, #fe6f4b, #fe6f4b, #fd977d);
+}
+.searchMOBs a.mdMAPsearchVALUe:hover, 
+.mdMAPssearchBTNs a.mdMAPsearchVALUe:hover,
+.mdMAPSelmoreshdrPrint .mdMAPsearchCNTLnks .mdMAPschLnks:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover
+{
+	background-color:#0099cc;
+}
+.mdDTLIMITation a.btn,
+.dt-buttons button.dt-button,
+.dataTables_wrapper .dataTables_paginate .paginate_button
+{
+	background-color:#47c8f5;
+    background-image: linear-gradient(to bottom, #47c8f5, #0099cc, #0099cc, #0099cc, #0099cc, #47c8f5);
+	border-radius:3px !important;
+}
+.mdDTLIMITation a.btn:hover,
+.dt-buttons button.dt-button:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover
+{
+	background-color:#fe6f4b;
+}
+.mdMAPsPurPoseLst label.mdMAPSlabels{
+	margin-top:5px;
+}
+.mdMAPsPurPoseLst label.mdMAPSlabels:first-child{
+	width:100% !important;
+	flex: calc(100% / 1) !important;
+	margin-top:0px;
+	border-bottom:1px solid #ddd;
+}
+.dataTables_scroll .dataTables_scrollBody{
+	border-bottom:1px solid #ddd !important;
+	border-radius:3px !important;
+}
+.dataTables_scroll .dataTables_scrollHead{
+	margin-bottom:50px !important;
+}
+.dataTables_scroll .dataTables_scrollFoot{
+	position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #eee;
+    padding-top: 5.4px;
+    border-radius: 3px;
+}
+table.dataTable tfoot th{
+	border-top:0px solid #fff !important;
+}
+.mdTBPRchanages{
+	align-self:end;
+	align-items:end;
+}
+@media (min-width:767px)
+{
+	select.mdMAPsearchVALUe{
+		width:150px;
+	}
+}	
+
+@media (max-width:767px)
+{
+	select.mdMAPsearchVALUe{
+		width:100%;
+	}
+}	

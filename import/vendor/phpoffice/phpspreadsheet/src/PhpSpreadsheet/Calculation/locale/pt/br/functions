@@ -1,0 +1,238 @@
+##
+##	Add-in and Automation functions			FunÃ§Ãµes Suplemento e AutomaÃ§Ã£o
+##
+GETPIVOTDATA		= INFODADOSTABELADINÃ‚MICA	##	Retorna os dados armazenados em um relatÃ³rio de tabela dinÃ¢mica
+
+
+##
+##	Cube functions					FunÃ§Ãµes de Cubo
+##
+CUBEKPIMEMBER		= MEMBROKPICUBO			##	Retorna o nome de um KPI (indicador de desempenho-chave), uma propriedade e uma medida e exibe o nome e a propriedade na cÃ©lula. Um KPI Ã© uma medida quantificÃ¡vel, como o lucro bruto mensal ou a rotatividade trimestral dos funcionÃ¡rios, usada para monitorar o desempenho de uma organizaÃ§Ã£o.
+CUBEMEMBER		= MEMBROCUBO			##	Retorna um membro ou tupla em uma hierarquia de cubo. Use para validar se o membro ou tupla existe no cubo.
+CUBEMEMBERPROPERTY	= PROPRIEDADEMEMBROCUBO		##	Retorna o valor da propriedade de um membro no cubo. Usada para validar a existÃªncia do nome do membro no cubo e para retornar a propriedade especificada para esse membro.
+CUBERANKEDMEMBER	= MEMBROCLASSIFICADOCUBO	##	Retorna o enÃ©simo membro, ou o membro ordenado, em um conjunto. Use para retornar um ou mais elementos em um conjunto, assim como o melhor vendedor ou os dez melhores alunos.
+CUBESET			= CONJUNTOCUBO			##	Define um conjunto calculado de membros ou tuplas enviando uma expressÃ£o do conjunto para o cubo no servidor, que cria o conjunto e o retorna para o Microsoft Office Excel.
+CUBESETCOUNT		= CONTAGEMCONJUNTOCUBO		##	Retorna o nÃºmero de itens em um conjunto.
+CUBEVALUE		= VALORCUBO			##	Retorna um valor agregado de um cubo.
+
+
+##
+##	Database functions				FunÃ§Ãµes de banco de dados
+##
+DAVERAGE		= BDMÃ‰DIA			##	Retorna a mÃ©dia das entradas selecionadas de um banco de dados
+DCOUNT			= BDCONTAR			##	Conta as cÃ©lulas que contÃªm nÃºmeros em um banco de dados
+DCOUNTA			= BDCONTARA			##	Conta cÃ©lulas nÃ£o vazias em um banco de dados
+DGET			= BDEXTRAIR			##	Extrai de um banco de dados um Ãºnico registro que corresponde a um critÃ©rio especÃ­fico
+DMAX			= BDMÃX				##	Retorna o valor mÃ¡ximo de entradas selecionadas de um banco de dados
+DMIN			= BDMÃN				##	Retorna o valor mÃ­nimo de entradas selecionadas de um banco de dados
+DPRODUCT		= BDMULTIPL			##	Multiplica os valores em um campo especÃ­fico de registros que correspondem ao critÃ©rio em um banco de dados
+DSTDEV			= BDEST				##	Estima o desvio padrÃ£o com base em uma amostra de entradas selecionadas de um banco de dados
+DSTDEVP			= BDDESVPA			##	Calcula o desvio padrÃ£o com base na populaÃ§Ã£o inteira de entradas selecionadas de um banco de dados
+DSUM			= BDSOMA			##	Adiciona os nÃºmeros Ã  coluna de campos de registros do banco de dados que correspondem ao critÃ©rio
+DVAR			= BDVAREST			##	Estima a variÃ¢ncia com base em uma amostra de entradas selecionadas de um banco de dados
+DVARP			= BDVARP			##	Calcula a variÃ¢ncia com base na populaÃ§Ã£o inteira de entradas selecionadas de um banco de dados
+
+
+##
+##	Date and time functions				FunÃ§Ãµes de data e hora
+##
+DATE			= DATA				##	Retorna o nÃºmero de sÃ©rie de uma data especÃ­fica
+DATEVALUE		= DATA.VALOR			##	Converte uma data na forma de texto para um nÃºmero de sÃ©rie
+DAY			= DIA				##	Converte um nÃºmero de sÃ©rie em um dia do mÃªs
+DAYS360			= DIAS360			##	Calcula o nÃºmero de dias entre duas datas com base em um ano de 360 dias
+EDATE			= DATAM				##	Retorna o nÃºmero de sÃ©rie da data que Ã© o nÃºmero indicado de meses antes ou depois da data inicial
+EOMONTH			= FIMMÃŠS			##	Retorna o nÃºmero de sÃ©rie do Ãºltimo dia do mÃªs antes ou depois de um nÃºmero especificado de meses
+HOUR			= HORA				##	Converte um nÃºmero de sÃ©rie em uma hora
+MINUTE			= MINUTO			##	Converte um nÃºmero de sÃ©rie em um minuto
+MONTH			= MÃŠS				##	Converte um nÃºmero de sÃ©rie em um mÃªs
+NETWORKDAYS		= DIATRABALHOTOTAL		##	Retorna o nÃºmero de dias Ãºteis inteiros entre duas datas
+NOW			= AGORA				##	Retorna o nÃºmero de sÃ©rie seqÃ¼encial da data e hora atuais
+SECOND			= SEGUNDO			##	Converte um nÃºmero de sÃ©rie em um segundo
+TIME			= HORA				##	Retorna o nÃºmero de sÃ©rie de uma hora especÃ­fica
+TIMEVALUE		= VALOR.TEMPO			##	Converte um horÃ¡rio na forma de texto para um nÃºmero de sÃ©rie
+TODAY			= HOJE				##	Retorna o nÃºmero de sÃ©rie da data de hoje
+WEEKDAY			= DIA.DA.SEMANA			##	Converte um nÃºmero de sÃ©rie em um dia da semana
+WEEKNUM			= NÃšMSEMANA			##	Converte um nÃºmero de sÃ©rie em um nÃºmero que representa onde a semana cai numericamente em um ano
+WORKDAY			= DIATRABALHO			##	Retorna o nÃºmero de sÃ©rie da data antes ou depois de um nÃºmero especÃ­fico de dias Ãºteis
+YEAR			= ANO				##	Converte um nÃºmero de sÃ©rie em um ano
+YEARFRAC		= FRAÃ‡ÃƒOANO			##	Retorna a fraÃ§Ã£o do ano que representa o nÃºmero de dias entre data_inicial e data_final
+
+
+##
+##	Engineering functions				FunÃ§Ãµes de engenharia
+##
+BESSELI			= BESSELI			##	Retorna a funÃ§Ã£o de Bessel In(x) modificada
+BESSELJ			= BESSELJ			##	Retorna a funÃ§Ã£o de Bessel Jn(x)
+BESSELK			= BESSELK			##	Retorna a funÃ§Ã£o de Bessel Kn(x) modificada
+BESSELY			= BESSELY			##	Retorna a funÃ§Ã£o de Bessel Yn(x)
+BIN2DEC			= BIN2DEC			##	Converte um nÃºmero binÃ¡rio em decimal
+BIN2HEX			= BIN2HEX			##	Converte um nÃºmero binÃ¡rio em hexadecimal
+BIN2OCT			= BIN2OCT			##	Converte um nÃºmero binÃ¡rio em octal
+COMPLEX			= COMPLEX			##	Converte coeficientes reais e imaginÃ¡rios e um nÃºmero complexo
+CONVERT			= CONVERTER			##	Converte um nÃºmero de um sistema de medida para outro
+DEC2BIN			= DECABIN			##	Converte um nÃºmero decimal em binÃ¡rio
+DEC2HEX			= DECAHEX			##	Converte um nÃºmero decimal em hexadecimal
+DEC2OCT			= DECAOCT			##	Converte um nÃºmero decimal em octal
+DELTA			= DELTA				##	Testa se dois valores sÃ£o iguais
+ERF			= FUNERRO			##	Retorna a funÃ§Ã£o de erro
+ERFC			= FUNERROCOMPL			##	Retorna a funÃ§Ã£o de erro complementar
+GESTEP			= DEGRAU			##	Testa se um nÃºmero Ã© maior do que um valor limite
+HEX2BIN			= HEXABIN			##	Converte um nÃºmero hexadecimal em binÃ¡rio
+HEX2DEC			= HEXADEC			##	Converte um nÃºmero hexadecimal em decimal
+HEX2OCT			= HEXAOCT			##	Converte um nÃºmero hexadecimal em octal
+IMABS			= IMABS				##	Retorna o valor absoluto (mÃ³dulo) de um nÃºmero complexo
+IMAGINARY		= IMAGINÃRIO			##	Retorna o coeficiente imaginÃ¡rio de um nÃºmero complexo
+IMARGUMENT		= IMARG				##	Retorna o argumento teta, um Ã¢ngulo expresso em radianos
+IMCONJUGATE		= IMCONJ			##	Retorna o conjugado complexo de um nÃºmero complexo
+IMCOS			= IMCOS				##	Retorna o cosseno de um nÃºmero complexo
+IMDIV			= IMDIV				##	Retorna o quociente de dois nÃºmeros complexos
+IMEXP			= IMEXP				##	Retorna o exponencial de um nÃºmero complexo
+IMLN			= IMLN				##	Retorna o logaritmo natural de um nÃºmero complexo
+IMLOG10			= IMLOG10			##	Retorna o logaritmo de base 10 de um nÃºmero complexo
+IMLOG2			= IMLOG2			##	Retorna o logaritmo de base 2 de um nÃºmero complexo
+IMPOWER			= IMPOT				##	Retorna um nÃºmero complexo elevado a uma potÃªncia inteira
+IMPRODUCT		= IMPROD			##	Retorna o produto de nÃºmeros complexos
+IMREAL			= IMREAL			##	Retorna o coeficiente real de um nÃºmero complexo
+IMSIN			= IMSENO			##	Retorna o seno de um nÃºmero complexo
+IMSQRT			= IMRAIZ			##	Retorna a raiz quadrada de um nÃºmero complexo
+IMSUB			= IMSUBTR			##	Retorna a diferenÃ§a entre dois nÃºmeros complexos
+IMSUM			= IMSOMA			##	Retorna a soma de nÃºmeros complexos
+OCT2BIN			= OCTABIN			##	Converte um nÃºmero octal em binÃ¡rio
+OCT2DEC			= OCTADEC			##	Converte um nÃºmero octal em decimal
+OCT2HEX			= OCTAHEX			##	Converte um nÃºmero octal em hexadecimal
+
+
+##
+##	Financial functions				FunÃ§Ãµes financeiras
+##
+ACCRINT			= JUROSACUM			##	Retorna a taxa de juros acumulados de um tÃ­tulo que paga uma taxa periÃ³dica de juros
+ACCRINTM		= JUROSACUMV			##	Retorna os juros acumulados de um tÃ­tulo que paga juros no vencimento
+AMORDEGRC		= AMORDEGRC			##	Retorna a depreciaÃ§Ã£o para cada perÃ­odo contÃ¡bil usando o coeficiente de depreciaÃ§Ã£o
+AMORLINC		= AMORLINC			##	Retorna a depreciaÃ§Ã£o para cada perÃ­odo contÃ¡bil
+COUPDAYBS		= CUPDIASINLIQ			##	Retorna o nÃºmero de dias do inÃ­cio do perÃ­odo de cupom atÃ© a data de liquidaÃ§Ã£o
+COUPDAYS		= CUPDIAS			##	Retorna o nÃºmero de dias no perÃ­odo de cupom que contÃ©m a data de quitaÃ§Ã£o
+COUPDAYSNC		= CUPDIASPRÃ“X			##	Retorna o nÃºmero de dias da data de liquidaÃ§Ã£o atÃ© a data do prÃ³ximo cupom
+COUPNCD			= CUPDATAPRÃ“X			##	Retorna a prÃ³xima data de cupom apÃ³s a data de quitaÃ§Ã£o
+COUPNUM			= CUPNÃšM			##	Retorna o nÃºmero de cupons pagÃ¡veis entre as datas de quitaÃ§Ã£o e vencimento
+COUPPCD			= CUPDATAANT			##	Retorna a data de cupom anterior Ã  data de quitaÃ§Ã£o
+CUMIPMT			= PGTOJURACUM			##	Retorna os juros acumulados pagos entre dois perÃ­odos
+CUMPRINC		= PGTOCAPACUM			##	Retorna o capital acumulado pago sobre um emprÃ©stimo entre dois perÃ­odos
+DB			= BD				##	Retorna a depreciaÃ§Ã£o de um ativo para um perÃ­odo especificado, usando o mÃ©todo de balanÃ§o de declÃ­nio fixo
+DDB			= BDD				##	Retorna a depreciaÃ§Ã£o de um ativo com relaÃ§Ã£o a um perÃ­odo especificado usando o mÃ©todo de saldos decrescentes duplos ou qualquer outro mÃ©todo especificado por vocÃª
+DISC			= DESC				##	Retorna a taxa de desconto de um tÃ­tulo
+DOLLARDE		= MOEDADEC			##	Converte um preÃ§o em formato de moeda, na forma fracionÃ¡ria, em um preÃ§o na forma decimal
+DOLLARFR		= MOEDAFRA			##	Converte um preÃ§o, apresentado na forma decimal, em um preÃ§o apresentado na forma fracionÃ¡ria
+DURATION		= DURAÃ‡ÃƒO			##	Retorna a duraÃ§Ã£o anual de um tÃ­tulo com pagamentos de juros periÃ³dicos
+EFFECT			= EFETIVA			##	Retorna a taxa de juros anual efetiva
+FV			= VF				##	Retorna o valor futuro de um investimento
+FVSCHEDULE		= VFPLANO			##	Retorna o valor futuro de um capital inicial apÃ³s a aplicaÃ§Ã£o de uma sÃ©rie de taxas de juros compostas
+INTRATE			= TAXAJUROS			##	Retorna a taxa de juros de um tÃ­tulo totalmente investido
+IPMT			= IPGTO				##	Retorna o pagamento de juros para um investimento em um determinado perÃ­odo
+IRR			= TIR				##	Retorna a taxa interna de retorno de uma sÃ©rie de fluxos de caixa
+ISPMT			= Ã‰PGTO				##	Calcula os juros pagos durante um perÃ­odo especÃ­fico de um investimento
+MDURATION		= MDURAÃ‡ÃƒO			##	Retorna a duraÃ§Ã£o de Macauley modificada para um tÃ­tulo com um valor de paridade equivalente a R$ 100
+MIRR			= MTIR				##	Calcula a taxa interna de retorno em que fluxos de caixa positivos e negativos sÃ£o financiados com diferentes taxas
+NOMINAL			= NOMINAL			##	Retorna a taxa de juros nominal anual
+NPER			= NPER				##	Retorna o nÃºmero de perÃ­odos de um investimento
+NPV			= VPL				##	Retorna o valor lÃ­quido atual de um investimento com base em uma sÃ©rie de fluxos de caixa periÃ³dicos e em uma taxa de desconto
+ODDFPRICE		= PREÃ‡OPRIMINC			##	Retorna o preÃ§o por R$ 100 de valor nominal de um tÃ­tulo com um primeiro perÃ­odo indefinido
+ODDFYIELD		= LUCROPRIMINC			##	Retorna o rendimento de um tÃ­tulo com um primeiro perÃ­odo indefinido
+ODDLPRICE		= PREÃ‡OÃšLTINC			##	Retorna o preÃ§o por R$ 100 de valor nominal de um tÃ­tulo com um Ãºltimo perÃ­odo de cupom indefinido
+ODDLYIELD		= LUCROÃšLTINC			##	Retorna o rendimento de um tÃ­tulo com um Ãºltimo perÃ­odo indefinido
+PMT			= PGTO				##	Retorna o pagamento periÃ³dico de uma anuidade
+PPMT			= PPGTO				##	Retorna o pagamento de capital para determinado perÃ­odo de investimento
+PRICE			= PREÃ‡O				##	Retorna a preÃ§o por R$ 100,00 de valor nominal de um tÃ­tulo que paga juros periÃ³dicos
+PRICEDISC		= PREÃ‡ODESC			##	Retorna o preÃ§o por R$ 100,00 de valor nominal de um tÃ­tulo descontado
+PRICEMAT		= PREÃ‡OVENC			##	Retorna o preÃ§o por R$ 100,00 de valor nominal de um tÃ­tulo que paga juros no vencimento
+PV			= VP				##	Retorna o valor presente de um investimento
+RATE			= TAXA				##	Retorna a taxa de juros por perÃ­odo de uma anuidade
+RECEIVED		= RECEBER			##	Retorna a quantia recebida no vencimento de um tÃ­tulo totalmente investido
+SLN			= DPD				##	Retorna a depreciaÃ§Ã£o em linha reta de um ativo durante um perÃ­odo
+SYD			= SDA				##	Retorna a depreciaÃ§Ã£o dos dÃ­gitos da soma dos anos de um ativo para um perÃ­odo especificado
+TBILLEQ			= OTN				##	Retorna o rendimento de um tÃ­tulo equivalente a uma obrigaÃ§Ã£o do Tesouro
+TBILLPRICE		= OTNVALOR			##	Retorna o preÃ§o por R$ 100,00 de valor nominal de uma obrigaÃ§Ã£o do Tesouro
+TBILLYIELD		= OTNLUCRO			##	Retorna o rendimento de uma obrigaÃ§Ã£o do Tesouro
+VDB			@3&şğââââââVH:,    +c:storage:toast.
+ç‰ c:storage:tile.
+æ+c:storage:toast,‰ 	c:toc:tile, úc:toast- ôc:tickle- óc:toast, üc:tickle, û+c:storage:toast-w)c:storage:tile-vL c:tickle.
+c:tile- €c:tile- ò)c:storage:tileÎ)c:storage:tile¶c:voip Àc:voip ¨c:voip c:voipxc:voip`c:voipHc:voip0	c:voipÚ c:toast,c:toast+c:toast*éc:toast)Ñc:toast(¹c:toast'¡c:toast&‰c:toast%qc:toast$Yc:toast#Ac:toast")c:toast!c:toast ùc:toastác:toastÉc:toast±c:toast™c:toastc:toastic:toastQc:toast9c:toast!c:toast	c:toastñc:toastÙc:toastÁc:toast©c:toast‘c:toastyc:toastac:toastIc:toast1c:toastc:toastc:toast
+ éc:toast	 Ñc:toast ¹c:toast ¡c:toast ‰c:toastqc:toastYc:toastAc:toast)	c:toast; c:tile,
+c:tile+òc:tile*Úc:tile)Âc:tile(ªc:tile'’c:tile&zc:tile%bc:tile$Jc:tile#2c:tile"c:tile!c:tile êc:tileÒc:tileºc:tile¢c:tileŠc:tilerc:tileZc:tileBc:tile*c:tilec:tileúc:tileâc:tileÊc:tile²c:tilešc:tile‚c:tilejc:tileRc:tile:c:tile"c:tile
+c:tile òc:tile
+ Úc:tile	 Âc:tile ªc:tile ’c:tilezc:tilebc:tileJc:tile2c:tile	c:tile   c:tickle,c:tickle+c:tickle*íc:tickle)Õc:tickle(½c:tickle'¥c:tickle&c:tickle%uc:tickle$]c:tickle#Ec:tickle"-c:tickle!c:tickle ıc:tickleåc:tickleÍc:tickleµc:ticklec:tickle…c:ticklemc:tickleUc:tickle=c:tickle%c:ticklec:tickleõc:tickleİc:tickleÅc:tickle­c:tickle•c:tickle}c:tickleec:tickleMc:tickle5c:ticklec:ticklec:tickle
+ íc:tickle	 Õc:tickle ½c:tickle ¥c:tickle c:tickleuc:tickle]c:tickleEc:tickle-	c:tickle+c:storage:toast++c:storage:toast*ï+c:storage:toast)×+c:storage:toast(¿+c:storage:toast'§+c:storage:toast&+c:storage:toast%w+c:storage:toast$_+c:storage:toast#G+c:storage:toast"/+c:storage:toast!+c:storage:toast ÿ+c:storage:toastç+c:storage:toastÏ+c:storage:toast·+c:storage:toastŸ+c:storage:toast‡+c:storage:toasto+c:storage:toastW+c:storage:toast?+c:storage:toast'+c:storage:toast+c:storage:toast÷+c:storage:toastß+c:storage:toastÇ+c:storage:toast¯+c:storage:toast—+c:storage:toast+c:storage:toastg+c:storage:toastO+c:storage:toast7+c:storage:toast+c:storage:toast+c:storage:toast
+ ï+c:storage:toast	 ×+c:storage:toast ¿+c:storage:toast §+c:storage:toast +c:storage:toastw+c:storage:toast_+c:storage:toastG+c:storage:toast/+	c:storage:toast)c:storage:tile,)c:storage:tile+)c:storage:tile*î)c:storage:tile)Ö)c:storage:tile(¾)c:storage:tile'¦)c:storage:tile&)c:storage:tile%v)c:storage:tile$^)c:storage:tile#F)c:storage:tile".)c:storage:tile!)c:storage:tile ş)c:storage:tileæ       §B}]wáËÉyŞ—Ä‹
+æ ÓÇóæÙÌ¿±£•‡yk]OA3%	ûíßÑÃµ§™‹}oaSE7)ÿñãÕÇÇzº­ “…wi[M?1#ùëİÏÁ³¥—‰{m_QC5'ıïáÓÅ·©œ€­*‰p`P@/
+ü
+ë
+Ú
+É
+¸
+§
+–
+…
+t
+c
+R
+A
+0
+
+	ı	ì	Û	Ê	¹	¨	—	†	u	d	S	B	1	 	şíİÌÕœ©h½­ì~˜W€qaQA1!ñáÑÁ±¡‘qaQA1!ñáÑÁ±¡‘qaQA-ñİÈ³‰t_J5 öáÌ·¢xcN9$úåĞ»»»»»jT>(       c:badgeë!	c:internetê cc:ringingì = z Š M‘ Ru9 c:badge õ	c:cloud ñ» c:ringing ï» c:internc:ringing ÿ!	c:internet şc:badge ı	c:cloud ùc:ringing ÷!	c:internet ö   Ãc:ringing ß   ²c:internet Ş    c:badge İ   ‘c:cloud Ù   ‚c:ringing ×   qc:internet Ö   _c:badge Õ   Pc:cloud Ñ   Ac:ringing Ï   0c:internet Î   c:badge Í   c:cloud Éc:ringingc:badge!	c:internet	c:cloud )c:storage:tileæ)c:storage:tileÎ)c:storage:tile¶)c:storage:tile)c:storage:tile†)c:storage:tilen)c:storage:tileV)c:storage:tile>)c:storage:tile&)c:storage:tile)c:storage:tileö)c:storage:tileŞ)c:storage:tileÆ)c:storage:tile®)c:storage:tile–)c:storage:tile~)c:storage:tilef)c:storage:tileN)c:storage:tile6)c:storage:tile)c:storage:tile)c:storage:tile î)c:storage:tile Ö)c:storage:tile ¾)c:storage:tile ¦)c:storage:tile )c:storage:tilev)c:storage:tile^)c:storage:tileF)c:storage:tile.)c:storage:tile	c:ringing¼	c:ringing¤	c:ringingŒ	c:ringingt	c:ringing\	c:ringingD	c:ringing,	c:ringing	c:ringingü	c:ringingä	c:ringingÌ	c:ringing´	c:ringingœ	c:ringing„	c:ringingl	c:ringingT	c:ringing<	c:ringing$	c:ringing	c:ringingô	c:ringingÜ	c:ringingÄ	c:ringing¬	c:ringing”	c:ringing|	c:ringingd	c:ringingL	c:ringing4	c:ringing	c:ringing	c:ringing ì	c:ringing Ô	c:ringing ¼	c:ringing ¤	c:ringing Œ	c:ringingt	c:ringing\	c:ringingD	c:ringing,c:ringingÔc:ringing!	c:internetÒ!	c:internet!c:internetº!c:internet¢!c:internetŠ!c:internetr!c:internetZ!c:internetB!c:internet*!c:internet!c:internetú!c:internetâ!c:internetÊ!c:internet²!c:internetš!c:internet‚!c:internetj!c:internetR!c:internet:!c:internet"!c:internet
+!c:internetò!c:internetÚ!c:internetÂ!c:internetª!c:internet’!c:internetz!c:internetb!c:internetJ!c:internet2!c:internet!c:internet!c:internet ê!c:internet Ò!c:internet º!c:internet ¢!c:internet Š!c:internetr!c:internetZ!c:internetB!c:internet*	c:cloudè	c:cloudĞ	c:cloudc:cloud¸c:cloud c:cloudˆc:cloudpc:cloudXc:cloud@c:cloud(c:cloudc:cloudøc:cloudàc:cloudÈc:cloud°c:cloud˜c:cloud€c:cloudhc:cloudPc:cloud8c:cloud c:cloudc:cloudğc:cloudØc:cloudÀc:cloud¨c:cloudc:cloudxc:cloud`c:cloudHc:cloud0c:cloudc:cloud c:cloud èc:cloud Ğc:cloud ¸c:cloud  c:cloud ˆc:cloudpc:cloudXc:cloud@c:cloud(c:badgeÓc:badge»c:badge£c:badge‹c:badgesc:badge[c:badgeCc:badge+c:badgec:badgeûc:badgeãc:badgeËc:badge³c:badge›c:badgeƒc:badgekc:badgeSc:badge;c:badge#c:badgec:badgeóc:badgeÛc:badgeÃc:badge«c:badge“c:badge{c:badgecc:badgeKc:badge3c:badgec:badgec:badge ëc:badge Óc:badge »c:badge £c:badge ‹c:badgesc:badge[c:badgeCc:badge+c:badge       §B}]wáË”ø}šÆêŸ
+Ö × jU@+ì×Â­kÁ˜ƒnYD.ìÖÀêÔ¾¨’|fP:$øâÌ¶ Št^H2ğÚÄ®˜‚lªU «^PB4&ùêÛÌ½®ŸrcTE6'	úëÜÍ¾¯ ‘‚sdUF7(
+
+û€6á
+ï
+ã
+×
+Ë
+¿
+³
+¦
+™
+Œ
+
+r
+e
+X
+K
+>
+1
+$
+
+
+	ı	ğ	ã	Ö	É	¼	¯	¢	•	ˆ	{	n	a	T	G	:	-	 		ùìßÒÄ¶ñF©œ‚tfXJ<. öèÚÌ¾°¢”†xj\N@2$úìŞĞÂ´¦˜Œ€th\OB5(ôçÚÍÀ³¦™Œ?1#ùëİÏÁ³¥—‰{m_QC7+ú§šr:tile r:tileir:tileQr:tile9r:tile!r:tile	r:badgeÙ+c:storage:toast
+ç   ?c:storage:tileÖ c:tickle €c:tile òc:tile ú+c:storage:toastw)c:storage:tilev+ c:tickc:tickle ûc:toast ô+c:storage:toast)c:storage:tile   c:tickc:tickle óc:toast ü+c:storage:toast)c:storage:tilec:ticklec:toastc:tileò+c:storage:toastï+c:storage:toast+c:storage:toast ï+c:storage:toast ×+c:storage:toast ¿+c:storage:toast §+c:storage:toast +c:storage:toastw+c:storage:toast_+c:storage:toastG+c:storage:toast/+c:storage:toast)c:storage:tileî)c:storage:tileÖ)c:storage:tile¾)c:storage:tile¦)c:storage:tile)c:storage:tilev)c:storage:tile^)c:storage:tileF)c:storage:tile.)c:storage:tilec:voipc:voipøc:voipàc:voipÈc:voip°c:voip˜c:voip€c:voiphc:voipPc:voip8c:voip c:voipc:voip ğc:voip Øc:voip Àc:voip ¨c:voip c:voipxc:voip`c:voipHc:voip0c:voip	c:toast¹	c:toast¡	c:toast‰	c:toastq	c:toastY	c:toastA	c:toast)	c:toast	c:toastù	c:toastá	c:toastÉ	c:toast±	c:toast™	c:toast	c:toasti	c:toastQ	c:toast9	c:toast!	c:toast		c:toastñ	c:toastÙ	c:toastÁ	c:toast©	c:toast‘	c:toasty	c:toasta	c:toastI	c:toast1	c:toast	c:toast	c:toast é	c:toast Ñ	c:toast ¹	c:toast ¡	c:toast ‰	c:toastq	c:toastY	c:toastA	c:toast)c:toastéc:toastÑc:toastc:tileÚc:tileÂc:tileªc:tile’c:tilezc:tilebc:tileJc:tile2c:tilec:tilec:tileêc:tileÒc:tileºc:tile¢c:tileŠc:tilerc:tileZc:tileBc:tile*c:tilec:tileúc:tileâc:tileÊc:tile²c:tilešc:tile‚c:tilejc:tileRc:tile:c:tile"c:tile
+c:tile òc:tile Úc:tile Âc:tile ªc:tile ’c:tilezc:tilebc:tileJc:tile2c:tilec:tilec:tickleíc:tickleÕc:tickle½c:tickle¥c:ticklec:tickleuc:tickle]c:tickleEc:tickle-c:ticklec:tickleıc:tickleåc:tickleÍc:tickleµc:ticklec:tickle…c:ticklemc:tickleUc:tickle=c:tickle%c:ticklec:tickleõc:tickleİc:tickleÅc:tickle­c:tickle•c:tickle}c:tickleec:tickleMc:tickle5c:ticklec:ticklec:tickle íc:tickle Õc:tickle ½c:tickle ¥c:tickle c:tickleuc:tickle]c:tickleEc:tickle-c:tickle+c:storage:toast×+c:storage:toast¿+c:storage:toast§+c:storage:toast+c:storage:toastw+c:storage:toast_+c:storage:toastG+c:storage:toast/+c:storage:toast+c:storage:toastÿ+c:storage:toastç+c:storage:toastÏ+c:storage:toast·+c:storage:toastŸ+c:storage:toast‡+c:storage:toasto+c:storage:toastW+c:storage:toast?+c:storage:toast'+c:storage:toast+c:storage:toast÷+c:storage:toastß+c:storage:toastÇ+c:storage:toast¯+c:storage:toast—+c:storage:toast+c:storage:toastg+c:storage:toastO+c:storage:toast7+c:storage:toast   !    §B}]wáËÑ‡nÏœ­
+Ò âòäÖÈº¬‚tfXJ<. öèÚÌ¾°¢”†xj\N@2$
+üîàÒÄµ¦—ˆyj[L=.òãÔÅ¶§˜‰zk\M>/ óäÕÆ·¨™ŠnobUH;-
+õ
+ç
+Ù
+Ë
+½
+¯
+¡
+“
+…
+w
+i
+[
+M
+?
+1
+#
+
+	ù	ë	İ	Ï	Á	³	¥	—	‰	{	m	_	Q	C	5	'		şğâÔÆ·¨™Š{l]N?0!ôåÖÇ¸©š‹|m^O@1"õæ×È¹ª›Œ})aSE7)üíŞÏÀ±¢“„ufWH9*ıîßĞÁ²£”…vgXI:+şïà{Ã´¥–‡xhXH888888r:tile)r:tiler:tile ù– s:listc:voipps:audio(´s:badge(³r:tile(±		r:badgec:voip c:voipˆs:audio'œs:badge'›r:tile'™–c:voip¸r:tileÁr:tile©r:tile‘r:tileyc:voip.
+è   ;s:audio.
+Ü   ,s:badge.
+c:voip- øc:voip, ‘ s:audio-ls:banner
+ Şs:banner	 Æs:banner ®s:banner –s:banner~s:bannerfs:bannerNs:banner6s:banner	s:banner c:voip,øs:badge,s:badge+ûs:badge*ãs:badge)Ës:badge(³s:badge'›s:badge&ƒs:badge%ks:badge$Ss:badge#;s:badge"#s:badge!s:badge ós:badgeÛs:badgeÃs:badge«s:badge“s:badge{s:badgecs:badgeKs:badge3s:badges:badges:badgeës:badgeÓs:badge»s:badge£s:badge‹s:badgess:badge[s:badgeCs:badge+s:badges:badge ûs:badge
+ ãs:badge	 Ës:badge ³s:badge ›s:badge ƒs:badgeks:badgeSs:badge;s:badge#	s:badger:badge-as:audio,s:audio+üs:audio*äs:audio)Ìs:audio(´s:audio'œs:audio&„s:audio%ls:audio$Ts:audio#<s:audio"$s:audio!s:audio ôs:audioÜs:audioÄs:audio¬s:audio”s:audio|s:audiods:audioLs:audio4s:audios:audios:audioìs:audioÔs:audio¼s:audio¤s:audioŒs:audiots:audio\s:audioDs:audio,s:audios:audio üs:audio
+ äs:audio	 Ìs:audio ´s:audio œs:audio „s:audiols:audioTs:audio<s:audio$	s:audior:tile-ir:tile,r:tile+ùr:tile*ár:tile)Ér:tile(±r:tile'™r:tile&r:tile%ir:tile$Qr:tile#9r:tile"!r:tile!	r:tile ñr:tileÙr:tileÁr:tile©r:tile‘r:tileyr:tilear:tileIr:tile1r:tiler:tiler:tileér:tileÑr:tile¹r:tile¡r:tile‰r:tileqr:tileYr:tileAr:tile)r:tiler:tile ùr:tile
+ ár:tile	 Ér:tile ±r:tile ™r:tile r:tileir:tileQr:tile9r:tile!	r:tile	s:badge-kr:badge,	r:badge+ñr:badge*Ùr:badge)Ár:badge(©r:badge'‘r:badge&yr:badge%ar:badge$Ir:badge#1r:badge"r:badge!r:badge ér:badgeÑr:badge¹r:badge¡r:badge‰r:badgeqr:badgeYr:badgeAr:badge)r:badger:badgeùr:badgeár:badgeÉr:badge±r:badge™r:badger:badgeir:badgeQr:badge9r:badge!r:badge	r:badge ñr:badge
+ Ùr:badge	 Ár:badge ©r:badge ‘r:badgeyr:badgear:badgeIr:badge1r:badge		r:badge   c:voip-Øc:voip+c:voip*ğc:voip)Øc:voip(Àc:voip'¨c:voip&c:voip%xc:voip$`c:voip#Hc:voip"0c:voip!c:voip  c:voipèc:voipĞc:voip¸c:voip c:voipˆc:voippc:voipXc:voip@c:voip(c:voipc:voipøc:voipàc:voipÈc:voip°c:voip˜c:voip€c:voiphc:voipPc:voip8c:voip c:voipc:voip
+ ğ   "    §B}]wáËRV¨«aõ 
+ç ÔÚ
+ò*Õi\O¹¬Ÿ	üïYL?œXÁ³’+÷éÛÍ¿±£•‡yk]OA3%	ûíßÑÃµ§™‹}oaSE7)ÿJóçÛÏÃ¶©Ú…xk^QD7ôçÚÍÀ³¦™ŒreXK>1$		‚2â’BÆ=ùùìßÒÅ·©›qcUG9+óå×É»­Ÿ‘ƒugYK=/!fÆv&ªÿe!İúíàÒÄ¶¨šŒ~pbTF8* òäÖÈº¬âşğòäÖÈt$Ô„4¸s/ëº¬‚teVG888888		l	Y	F	3	                     r:tile ±’ s:listc:voip@	s:audioä	s:badgeãr:tileá’c:voipXr:tileYr:tileAr:tile)r:tiler:tile ùr:tile ár:tile É s:listc:voipp	s:audioÌ	s:badgeËr:tileÉc:voipˆ	s:badge«	s:badgeÛ	s:badgeÃ s:listc:voip r:tile	r:tileñr:tileÙr:tileÁr:tile©r:tile‘r:tileyr:tilear:tileIr:tile1r:tiler:tiler:tileér:tileÑr:tile¹r:tile¡r:tile‰r:tileq	# s:listc:voip¸	s:audio´	s:badge³r:tile±c:voip c:voipèc:voipĞ	s:audioœ	s:badge›r:tile™c:voipHc:voip0c:voip	s:audio„	s:badgeƒr:tilec:voipc:voipxc:voip`	s:audiol	s:badgekr:tileic:voipØc:voipÀc:voip¨	s:audioT	s:badgeSr:tileQ	  	r:badge	s:badge“	s:badge{	s:badgec	s:badgeK	s:badge3	s:badge	s:badge	s:badgeë	s:badgeÓ	s:badge»	s:badge£	s:badge‹	s:badges	s:badge[	s:badgeC	s:badge+	s:badge	s:badge û	s:badge ã	s:badge Ë	s:badge ³	s:badge ›	s:badge ƒ	s:badgek	s:badgeS	s:badge;	s:badge#	s:badge	s:audio<	s:audio$	s:audio	s:audioô	s:audioÜ	s:audioÄ	s:audio¬	s:audio”	s:audio|	s:audiod	s:audioL	s:audio4	s:audio	s:audio	s:audioì	s:audioÔ	s:audio¼	s:audio¤	s:audioŒ	s:audiot	s:audio\	s:audioD	s:audio,	s:audio	s:audio ü	s:audio ä	s:audio Ì	s:audio ´	s:audio œ	s:audio „	s:audiol	s:audioT	s:audio<	s:audio$	s:audior:tile9r:tile!			Ïc:vc:voip à’c:voip Ø’c:voip Ğ„c:voip Èvc:voip ¸hc:voip °Zc:voip ¨Lc:voip  >c:voip ˆ0c:voip €"c:voip xc:voip pc:voip `øc:voip Pêc:voip @Üc:voip 8Îc:voip (Àc:voip  ²c:voip ¤c:voip  –c:voip ğˆc:voip èzc:voip Ølc:voip Ğ^c:voip ÈPc:voip ÀBc:voip °4c:voip ¨&c:voip ˜c:voip €
+c:voip p üc:voip h îc:voip ` àc:voip X Òc:voip H Äc:voip 8 ¶c:voip 0 ¨c:voip ( šc:voip   Œc:voip  ~c:voip  pc:voip   bc:voip ø Tc:vo

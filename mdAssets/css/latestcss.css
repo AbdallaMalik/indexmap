@@ -1,0 +1,520 @@
+.astMAPheaderUPDOWN{
+	top:-70px;
+}
+.full-Screen.leaflet-control a{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;	
+	text-decoration:none;
+}
+.shareResultsOptions{
+	gap:5px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-flex:column;
+}
+.shareThisLinksIcons{
+	color:#fff;
+	flex:1;
+	padding:0px;
+	margin:0px;
+	justify-content:center;
+	height:50px;
+	position:relative;
+	overflow:hidden;
+	margin-top:-23px !important;
+}
+.shareThisLinksIcons:first-child{
+	margin-top:30px !important;
+}
+.shareThisLinksIcons a{
+	position:relative;
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+	justify-content:center;
+}
+
+.shareThisLinksIcons a> img{
+	height:80%;
+	width:80%;
+}
+.share-side{
+	top:25%;
+}
+.astMARKerSHAReee{
+	justify-content:space-between;
+	flex:1;
+	align-items:center;
+	gap:5px;
+	color:#fff;
+}
+.astMARKerSHAReee .btn{
+	height:30px;
+	width:30px;
+	padding:0px;
+	justify-content:center;
+}
+@media(max-width:767px)
+{
+	.shareThisLinksIcons{
+		height:35px;
+	}
+	.shareThisLinksIcons{
+		margin-top:-15px !important;
+	}
+	.shareThisLinksIcons:first-child{
+		margin-top:40px !important;
+	}
+}
+
+
+
+.astMAPheaderPARTs .astMAP_selection_mtf, 
+.astMAPheaderPARTs .astMAP_selection_search, 
+.astMAPheaderPARTs .astMAP_selection_states{
+   
+}
+.astMAPheaderPARTs .astMAP_selection_states{
+	flex:3;
+	gap:2.5px;
+	flex-flow:row;
+}
+@media (max-width:767px)
+{
+	.astMAPheaderPARTs .astMAP_selection_states
+	{
+		flex-flow:wrap row;
+		gap:5px;
+	}
+	.astMAPheaderPARTs .astMAP_selections.astMAP_selections_mobile
+	{
+		align-items:start !important;
+	}
+	.astMAPheaderPARTs .astMAP_selections.astMAP_selections_mobile> .astMAP_selection
+	{
+		flex-flow:wrap row !important;
+		justify-content:start !important;
+		align-items:start !important;
+		gap:0;
+		flex:initial !important;
+		height:auto;
+	}
+	.astMAPheaderPARTs .astMAP_selection_mobheader{
+		margin-bottom:20px;
+	}
+}
+
+
+
+.dfLocationINFOs{
+	border:0px solid #eee;
+	padding:0px;
+	border-radius:3px;
+	justify-content:start;
+	align-items:start;
+	flex-flow:column;
+	background-color:rgba(0,0,0,0.5);
+	gap:0px;
+	position:fixed;
+	left:-5px;
+	bottom:40px;
+	z-index:9999902 !important;
+	box-shadow:0px 0px 5px 5px rgba(0,0,0,0.3);;
+}
+.dfLocationINFOs a.btn{
+	background:#ff1e56;
+	color:#fff;
+	padding:0px;
+	border:0px solid #eee;
+	border-radius:3px;
+	height:25px;
+	outline:0px;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	gap:3px;
+}
+.dfLocationINFOs a.btn span,
+.dfLocationINFOs a.btn b{
+	font-size:14px;
+	padding:0px;
+	margin:0px;
+}
+.dfLocationINFOs a.btn b{
+	font-size:12px;
+}
+.dfLocationINFOs a.btn:hover{
+	background:rgba(255,255,255,0.5);
+	color:#000;
+}
+.dfLocationINFOs .dfLocationINFOss{
+	padding:10px;
+	border-top:1px solid #ddd;
+	border-radius:3px;
+	justify-content:space-between;
+	align-items:start;
+	gap:5px;
+}
+.dfLocationINFOss .dfLocINFOLabels,
+.dfLocationINFOss .dfLocINFOPrices,
+.dfLocationINFOs .dfLocationINDeTitle{
+	justify-content:center;
+	align-items:center;
+	flex-flow:column;
+	gap:3px;
+}
+.dfLocationINFOss .dfLocINFOLabels span,
+.dfLocationINFOss .dfLocINFOPrices b{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:20px;
+	padding:0px 5px;
+	border:1px solid #ddd;
+	color:#fff;
+	width:100%;
+}
+.dfLocationINFOss .dfLocINFOLabels span{
+	height:30px;
+	border-radius:3px 0px 0px 3px;
+}
+.dfLocationINFOs .dfLocationINDeTitle{
+	flex-flow:row;
+	color:#fff;
+	width:100%;
+	height:30px;
+	background-color: rgba(0,0,0,0.5);
+}
+.dfLocINFOPrices> div,
+.dfLocINFOPrices> div> span{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	height:20px;
+}
+.dfLocINFOPrices> div{
+	border:1px solid #ddd;
+	width:100%;
+	padding:0px 5px;
+	gap:5px;
+	height:30px;
+	border-radius:0px 3px 3px 0px;
+}
+.dfLocationINFOss .dfLocINFOPrices b{
+	border:0px solid #fff;
+	padding:0px;
+	margin:0px;
+	height:20px;
+	font-size: 14px;
+	color:#fff;
+}
+.dfLocINFOPrices> div> span{
+	justify-content:center;
+	font-size:8px;
+	padding:0px;
+	margin:0px;
+	color:#f8f8f8;
+	align-self: end;
+    font-style: italic;
+    text-transform: math-auto;
+}
+.dfLocINFOPrices> div,
+.dfLocationINFOss .dfLocINFOLabels span{
+	background-color:rgba(0,0,0,0.3);
+	color:#fff;
+}
+.dfindexMAPs#map{
+	background-color:rgba(0,0,0,0.2) !important;
+	background:rgba(0,0,0,0.2) !important;
+	top:60px !important;
+}
+
+@media (max-width:767px)
+{
+	.dfLocINFOPrices> div{
+		gap:2.5;
+	}
+	.dfLocationINFOs{
+		gap:0px;
+		padding:0px;
+		padding-top:5px;
+		bottom:60px;
+		left:-5px;
+		box-shadow:0px 0px 2px 2px rgba(0,0,0,0.3);
+	}
+	.dfLocationINFOs .dfLocationINFOss{
+		padding:5px;
+	}
+	.dfLocationINFOss .dfLocINFOLabels span{
+		font-size:10px;
+	}
+	.dfindexMAPs#map{
+		top:50px !important;
+	}
+}
+
+
+
+.astMAP_selections select{
+	-webkit-appearance: menulist-button !important;
+}
+.astMAP_selection_more{
+	position:fixed;
+	height:45px;
+	left:12%;right:12%;top:60px;
+	background-color:#f8f8f8;
+	gap:5px;
+	text-transform:uppercase;
+}
+.astMAP_selection_more .astMAPSelmore{
+	justify-content:center;
+	align-items:center;
+	flex-flow:wrap row;
+	gap:5px;
+	height:auto;
+	min-height:45px;
+	position:relative;
+	flex:1;
+}
+.astMAP_selection_more .astMAPSelmore label.srSROsalelabel{
+	justify-content:center;
+	align-items:center;
+	position:relative;
+    background-color:f8f8f8;
+	height:45px;
+	gap:0px;
+	z-index:10 !important;
+	overflow:hidden;
+	width:100%;
+	outline:0px;
+	border:1px solid #eee;
+	border-radius:3px;
+}
+.astMAP_selection_more .astMAPSelmore label.srSROsalelabel::after{
+	content:'';
+	height:100%;
+	width:100%;
+	left:0;right:0;
+	position:absolute;
+}
+.astMAP_selection_more .astMAPSelmore label.srSROsalelabel> div{
+	height:40px;
+	padding:0px 15px;
+	padding-right:25px;
+	justify-content:start;
+	align-items:center;
+	margin:0px;
+	width:100%;
+	border-radius:3px;
+	background-color:#fff;
+	flex-flow:row;
+}
+.astMAP_selection_more .astMAPSelmore label.srSROsalelabel i{
+	height:40px;
+	width:15px;
+	padding:0px;
+	margin:0px;
+	justify-content:center;
+	align-items:center;
+	color:#777;
+	position:relative;
+	margin-left:-15px;
+	border-radius:0px 3px 3px 0px;
+	font-size:12px;
+}
+.astMAP_selection_more .astMAPSelmore .astMAPSelmoresub{
+	justify-content:center;
+	align-items:center;
+	flex-flow:wrap row;
+	gap:3px;
+	width:100%;
+	background-color:#f8f8f8;
+	position:absolute;
+	top:45px;
+	left:0;right:0;
+	min-height:45px;
+	padding:15px;
+	padding-top:5px;
+}
+.astMAP_selection_more .astMAPSelmore .astMAPSelmoresub> label{
+	flex:calc(100% / 1);
+	justify-content:start;
+	align-items:center;
+	height:30px;
+	padding:0px;
+	margin:0px;
+}
+.astMAP_selection_more .astMAPSelmore .astMAPSelmoresub> a{
+	border:1px solid #eee;
+	border-radius:3px;
+	flex:1;
+}
+.astMAP_selection_more .astMAPSelmore .astMAPSelmoresub a{
+	justify-content:center;
+	align-items:center;
+	text-decoration:none;
+	color:#777;
+	height:30px;
+	padding:0px 5px;
+	background-color:#fff;
+}
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub .astMAPSlmrsubs{
+	flex:1;
+	width:100%;
+	justify-content:center;
+	align-items:center;
+	gap:5px;
+	clear:both !important;
+	flex:calc(100% / 1);
+	position: initial;
+    padding: 15px 0px;
+}
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub .astMAPSlmrsubs a{
+	flex:calc(100% / 2.5);
+	position:relative;
+	overflow:hidden;
+}
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub .srSROsalelabel,
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub .srSROsaleftr{
+	height:30px;
+	gap:0px;
+}
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub .srSROsalelabel a{
+	border-bottom:1px solid #eee;
+	height:30px;
+	border-radius:0px;
+	justify-content:center;
+	align-items:center;
+	background-color:#f8f8f8;
+	flex:1;
+}
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub .srSROsaleftr{
+	height:35px;
+	gap:5px;
+}
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub .srSROsaleftr a{
+	border:0px;
+	height:35px;
+	padding:0px 5px;
+	justify-content:center;
+	align-items:center;
+	border:1px solid #5bb75b;
+}
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub .srSROsaleftr a:first-child{
+	color:#5bb75b;
+}
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub .srSROsaleftr a:last-child{
+	color:#fff;
+}
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub{
+	width:400px;
+	border:1px solid #ddd;
+	border-top:0px;
+	border-radius:0px 0px 3px 3px;
+}
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub.intsrSPricescn,
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub.intsrSAreascn,
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub.intsrSBedsBtscn,
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub.intsrSROsalecn{
+	width:350px;
+}
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub.intsrSBedsBtscn .astMAPSelmoresub a{
+	flex:calc(100% / 4);
+}
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub.intsrSPricescn .astMAPSelmoresub a,
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub.intsrSAreascn .astMAPSelmoresub a{
+	padding:4px 5px;
+	cursor:text !important;
+	outline:0px;
+	justify-content:start;
+	align-items:center !important;
+}
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub.intsrSPricescn> label,
+.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub.intsrSAreascn> label{
+	flex:1;
+	margin-bottom:-5px;
+}
+.astDnone{
+	display:none !important;
+}
+.astDINactive{
+	border:1px solid #5bb75b !important;
+}
+.astDTABactive{
+	color:#5bb75b !important;
+	border-bottom:1px solid #5bb75b !important;
+}
+.astNWVLUe{
+	color:#1c871c !important;
+	background-color:#e0f2fd !important;
+}
+.stSEARchmores{
+	height:40px;
+	border:0px solid #fff;
+	outline:0px;
+}
+.dfLocationINFOs .dfLocationINDeTitle a{
+	text-decoration:none !important;
+	color:#e0f2fd;
+}
+@media (max-width:767px)
+{
+	.astMAPheaderPARTs .astMAP_selections_mobile{
+		width:100%;
+		left:-700px;
+	}
+	.astMAP_selection_more{
+	    position:relative;
+	    height:initial;
+	    left:initial;right:initial;top:initial;
+	    gap:3px;
+		flex-flow:wrap row;
+		padding:5px 10px;
+	}
+    .astMAP_selection_more .astMAPSelmore{
+	    flex:calc(100% / 1);
+	}
+	.astMAPSelmore .astMAPSelmoresub.astMAPSlmrsub{
+		position:relative;
+		width:100% !important;
+		max-width:100% !important;
+		clear:both:!important;
+		top:initial !important;
+		padding:5px;
+	}
+	.astMAP_selection_more .astMAPSelmore .astMAPSelmoresub{
+		
+	}
+	.astMAP_selection_more .astMAPSelmore label.srSROsalelabel> div{
+		padding:0px 8px;
+	}
+	.astMAPSelmore .astMAPSelmoresub.intsrSResDNecn .astMAPSelmoresub a{
+		flex:auto;
+	}
+	.stSEARchmores{
+		display:none !important;
+	}
+	.stSEARchmores_mobile{
+		width:100%;
+		flex:1;
+		padding:15px 0px;
+		flex:1;
+	}
+	.stSEARchmores_mobile,
+	.stSEARchmores_mobile .stSEARchmores{
+		display:flex !important;
+		justify-content:center;
+		align-items:center;
+	}
+	.stSEARchmores_mobile button.btn.stSEARchmores{
+		gap:5px;
+		width:initial !important;
+		height:35px !important;
+		padding:0px 15px;
+	}
+}
+

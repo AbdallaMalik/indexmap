@@ -1,0 +1,121 @@
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+#map {
+}
+
+/* 
+ * Optional: Makes the sample page fill the window. 
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.dfloatBODYs{
+    justify-content:center;
+	align-items:cener;
+	position:relative;
+	width:100%;
+	height:100%;
+	overflow-y:auto;
+	padding:30px;
+	gap:0px;
+	flex-flow:wrap row;
+}
+.dfloatBODYs .dfloatPANeLs,
+.dfloatBODYs .dfloatPANeLs .dfloatLATLNGs,
+.dfloatBODYs .dfloatPANeLs .dfloatCONTROLs{
+    justify-content:center;
+	align-items:center;
+	flex-flow:wrap row;
+	gap:10px;
+	max-width:100%;
+	background-color:#fff;
+	position:relative;
+}
+.dfloatBODYs .dfloatPANeLs{
+    background-color:#f6f6f6;
+	width:initial;
+	height:initial;
+	box-shadow:0px 1px 0px 1px #fe6f4b;
+	padding:15px;
+	border-radius:0px 0px 3px 3px;
+}
+.dfloatBODYs .dfloatPANeLs .dfloatLATLNGs,
+.dfloatBODYs .dfloatPANeLs .dfloatCONTROLs{
+    gap:5px;
+	padding:15px;
+	border:1px solid #ddd;
+	border-radius:3px;
+	position:relative;
+}
+.dfloatBODYs .dfloatPANeLs .dfloatLATLNGs input,
+.dfloatBODYs .dfloatPANeLs .dfloatCONTROLs input,
+.dfloatBODYs .dfloatPANeLs .dfloatCONTROLs select{
+    display:flex;
+    justify-content:start;
+	align-items:center;
+	flex:1;
+	height:35px;
+	border:1px solid #eee;
+	border-radius:3px;
+	outline:0px;
+	padding:0px 5px;
+	margin:0px !important;
+	position:relative;
+	background-color:#f9f9f9;
+}
+.dfloatBODYs .dfloatPANeLs .dfloatCONTROLs input.btn{
+    background-color:#fe6f4b;
+	color:#000;
+	border:1px solid #eee;
+	width:initial !important;
+	justify-content:center;
+}
+.dfvdisabled{
+    pointer-events:none !important;
+	opacity:0.5;
+	box-shadow:0px 1px 0px 1px #ddd;
+}
+.dfdisabled{
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    min-height: 150px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%);
+	transition:0.5s;
+	border-radius:0px 0px 3px 3px;
+	box-shadow:0px 1px 0px 1px #fe6f4b;
+	opacity:0.9;
+	bottom:-150px;
+	color:#fff;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:18px;
+	left:auto;
+	padding:10px;
+}
+.dfdisablede::before{
+    position: absolute;
+    z-index: 20;
+    content: '';
+    width: 50%;
+    height: 5px;
+    background: #f6f6f6;
+	transition:0.5s;
+	bottom:-2.5px;
+}
+.dfstartMAGs{
+    pointer-events:none !important;
+	border:0px;
+}
+.dfstartMAP{
+    height:70%;
+	width:50%;
+	background-color:#f6f6f6;
+	border-radius:0px 0px 3px 3px;
+}
